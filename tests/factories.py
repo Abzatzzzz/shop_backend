@@ -1,14 +1,15 @@
 import factory
+from django.contrib.auth.models import User
 
 from apps.accounts.models import Account
-from django.contrib.auth.models import User
 
 
 class UserFactory(factory.django.DjangoModelFactory):
     class Meta:
+
         model = User
 
-    username = 'Test_user'
+    username = "Test_user"
 
 
 class AccountFactory(factory.django.DjangoModelFactory):
